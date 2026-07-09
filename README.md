@@ -160,6 +160,24 @@ Includes:
   concurrent submission, only ever create one row.
 - `tests/rateLimiter.test.js` — per-recipient hourly cap is enforced.
 
+### Example test run
+
+```
+ PASS  tests/concurrency.test.js (11.456 s)
+ PASS  tests/idempotency.test.js
+ PASS  tests/rateLimiter.test.js
+
+Test Suites: 3 passed, 3 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+Time:        15.299 s
+Ran all test suites.
+```
+
+Full terminal screenshot:
+
+![Test run screenshot](./docs/test-run.png)
+
 ## Configuration reference (`.env`)
 
 | Variable | Meaning | Default |
